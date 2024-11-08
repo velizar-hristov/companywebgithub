@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seyahat Firması</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Menü Barı -->
+    <header>
+        <div class="navbar">
+            <h1 class="logo">Seyahat Firması</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Ana Sayfa</a></li>
+                    <li><a href="#popular-tours">Popüler Turlar</a></li>
+                    <li><a href="#about">Hakkımızda</a></li>
+                    <li><a href="#services">Hizmetlerimiz</a></li>
+                    <li><a href="#contact">İletişim</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Ana Sayfa -->
+    <section id="home" class="home-section">
+        <h2>Hayalinizdeki Tatili Bulun!</h2>
+        <p>En güzel tatil fırsatları için bizimle seyahat edin!</p>
+        <button onclick="exploreTours()">Turları Keşfet</button>
+    </section>
+
+    <!-- Popüler Turlar -->
+    <section id="popular-tours" class="popular-tours-section">
+        <h2>Popüler Turlar</h2>
+        <div class="tour-cards">
+            <div class="tour-card">
+                <h3>Kapadokya Turu</h3>
+                <p>Doğa harikası Kapadokya’yı balon turuyla keşfedin!</p>
+            </div>
+            <div class="tour-card">
+                <h3>Antalya Tatil</h3>
+                <p>Deniz, kum ve güneşin tadını çıkarın.</p>
+            </div>
+            <div class="tour-card">
+                <h3>Karadeniz Yayla Turu</h3>
+                <p>Yeşil ve doğayla iç içe bir tatil.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hakkımızda -->
+    <section id="about" class="about-section">
+        <h2>Hakkımızda</h2>
+        <p>Biz, müşterilerimize en iyi tatil deneyimini sunmak için çalışan bir seyahat firmasıyız. Farklı lokasyonlarda eşsiz tatil paketleri sunuyoruz.</p>
+    </section>
+
+    <!-- Hizmetlerimiz -->
+    <section id="services" class="services-section">
+        <h2>Hizmetlerimiz</h2>
+        <ul>
+            <li>Yurt içi ve yurt dışı turlar</li>
+            <li>Otobüs ve uçak biletleri</li>
+            <li>Otel rezervasyonları</li>
+            <li>Rehberlik hizmetleri</li>
+        </ul>
+    </section>
+
+    <!-- İletişim -->
+    <section id="contact" class="contact-section">
+        <h2>İletişim</h2>
+        <form action="#">
+            <label for="name">Adınız:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mesajınız:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Gönder</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
